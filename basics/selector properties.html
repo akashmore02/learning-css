@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        button:hover{
+            color:white;
+            background-color: blue;
+        }
+
+        div:first-child{
+            background-color: aquamarine;
+        }
+
+        div:first-child::after{
+            content: "happy";
+            background-color:red;
+        }
+
+        a::after{
+         content:"happy";
+        }
+        h1:first-of-type:hover{     /*selects the first h1 tag of h1 type*/
+            background-color: blue;
+        }
+
+        h1:nth-last-of-type(2){         /* selects the nth h1 from bottom*/
+            background-color: rgb(156, 93, 4);
+        }
+
+        h1:nth-of-type(3){         /* selects the nth h1 from bottom*/
+           background-color: blueviolet;
+        }
+        h1:nth-of-type(3)::first-letter{         /* selects the nth h1 from bottom*/
+            color: rgb(4, 19, 156);
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <h1> Hello Guys</h1>
+    <h1> class = "name"> Welcome to My YT Channel</h1>
+    <h1>Happy</h1>
+    <p> id="intro" class = "name">Today we are going to learn how to trade a index. So index represents the combination of major stocks on a stock exchange</p>
+
+<div>
+    <div>Lets take for example</div>
+    <div>The major Indices are:</div>
+</div>
+<ol>
+    <li>Indian Indices</li>
+        <ul>
+            <li> Nifty 50</li>
+            <li> Sensex</li> 
+        </ul>
+    <li>European Indices</li>
+<ul>
+    <li>DAX</li>
+    <li>FTSE</li>
+</ul>
+<li>Russian Indices</li>
+</ol>
+
+
+<button> google </button>
+
+<a target = "_blank"href="https://www.tatamotors.com/">Tata Motors</a>
+<a target = "_parent" href="https://www.mahindra.com/">Mahindra Motors</a>
+
+</body>
+</html>
